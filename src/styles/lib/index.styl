@@ -1,0 +1,388 @@
+*
+  border 0
+  margin 0
+  padding 0
+  color midnightblue
+
+article, figcaption,figure,footer,header,hgroup,nav,section,sidebar
+  display block
+
+@font-face
+  font-family 'QuickSandBold'
+  src url('./assets/fuentes/qsb/quicksandbold.eot#') format('eot'),
+       url('./assets/fuentes/qsb/quicksandbold.woff') format('woff'),
+       url('./assets/fuentes/qsb/quicksandbold.ttf')  format('truetype'),
+       url('./assets/fuentes/qsb/quicksandbold.svg#svgFontName') format('svg')
+
+@font-face
+  font-family 'IcoMoon-Free'
+  src url("./assets/fuentes/IcoMoon-Free/IcoMoon-Free.eot")
+  src url("./assets/fuentes/IcoMoon-Free/IcoMoon-Free.eot?#iefix") format("embedded-opentype"),
+         url("./assets/fuentes/IcoMoon-Free/IcoMoon-Free.woff") format("woff"),
+         url('./assets/fuentes/IcoMoon-Free/IcoMoon-Free.ttf') format('truetype'),
+         url("./assets/fuentes/IcoMoon-Free/IcoMoon-Free.svg#icomoon") format("svg")
+  font-weight normal
+  font-style normal
+
+.icon2
+  display inline-block
+  font-size 32px
+  font-family 'IcoMoon-Free' !important
+  text-decoration none
+  text-rendering auto
+  user-select none
+
+.icon-previous2
+  &:before
+    content "\ea23"
+
+.icon-next2
+  &:before
+    content "\ea24"
+
+html,body
+  margin 0 auto
+  height 100%
+
+body
+  color black
+  font-size 1em
+  font-family verdana,sans-serif
+
+header,section,footer
+  background-color rgba(255,255,255,0.8)
+  width 90%
+  margin 0 auto
+
+header
+  height 10%
+  margin-bottom 1em
+  vertical-align bottom
+  box-shadow 0.1em 0.1em 0.1em #ffffff
+  border-radius 0.25em
+  caja1
+    height 100%
+    width 50%
+    #idimg
+      height 100%
+      img
+        height 100%
+    #textologo
+      vertical-align middle
+      padding-left 15px
+      font-size 2.2em
+      font-family 'QuickSandBold',verdana,sans-serif
+      text-shadow 0.05em 0.05em #ffffff
+    #botonmenu
+      a
+        svg
+          width 0
+          height 0
+    div
+      img
+        height 100%
+        vertical-align middle
+        padding 0
+        margin 0
+        border 0
+  nav
+    float right
+    width 50%
+    height 100%
+    vertical-align bottom
+    vertical-align text-bottom
+    position relative
+    div
+      text-transform capitalize
+      position absolute
+      width 100%
+      bottom 0
+      right 0
+      vertical-align bottom
+      height 2em
+      padding-bottom 0
+      margin-bottom 0
+      ul
+        -webkit-margin-before 0
+        -webkit-margin-after 0
+        -webkit-padding-start 0
+        li
+          font-size 0.8em
+          margin 0 auto
+          list-style none
+          display inline-block
+          vertical-align top
+          height 2em
+          width 8em
+          -webkit-transition border-radius 0.5s
+          transition border-radius 0.5s
+          a
+            text-align center
+            padding-top 0.5em
+            margin-top 0.5em
+            height 100%
+            display block
+            text-decoration none
+            &:hover
+              padding-top 0.4em
+              margin-top 0.4em
+              color #8C9B57
+              text-shadow 0.05em 0.05em #ddd
+              font-size 1.1em
+          &:hover
+            border-radius 0.5em
+            background url("./img/boton4.png") top repeat-x,
+              #EDEDED
+            background-size contain, cover
+            text-shadow 0.05em 0.05em #d6ced6
+            height 3em
+
+header caja1 #idimg, header caja1 #textologo, header caja1 #botonmenu
+  display inline-block
+
+header caja1, header nav
+  display inline-block
+  padding 0
+  margin 0
+  border 0
+
+#separador
+  clear both
+  height 0.55em
+  background-color #EDEDED
+  bottom 0
+  margin-top 0.3em
+  padding-top 0.3em
+
+section
+  clear both
+  margin-bottom 1em
+  height 70%
+  box-shadow 0.1em 0.1em 0.3em #ffffff
+  border-radius 0.25em
+  article
+    display inline-block
+    background-color white
+    width 80%
+    height 100%
+  sidebar
+    padding-top 10px
+    text-align center
+    height 100%
+    width 20%
+    float left
+    overflow auto
+    #btnProductosMenu
+      caja
+        margin-top 37px
+    a
+      caja
+        margin-left auto
+        margin-right auto
+        width 80%
+        display block
+        text-align center
+        vertical-align middle
+        background-color midnightblue
+        text-transform uppercase
+        font-weight bold
+        height 2.2em
+        color white
+        box-shadow 0.25em 0.25em 0.15em #888888
+        border-radius 0.25em
+        div
+          padding-top 0.5em
+          margin-top 0.5em
+          color white
+    ul
+      li
+        text-transform uppercase
+        padding-top 0.2em
+        margin-top 0.2em
+        list-style none
+        a
+          display block
+          background-color white
+          box-shadow 0.25em 0.25em 0.15em #888888
+          height 1.5em
+          margin-left auto
+          margin-right auto
+          width 80%
+          border-radius 0.25em
+          -webkit-transition width 1s,height 1s
+          transition width 1s,height 1s
+          padding-top 0.2em
+          margin-top 0.2em
+          text-decoration none
+          text-align center
+          vertical-align middle
+          &:hover
+            background rgba(219,255,251,1)
+            background -moz-linear-gradient(top, rgba(219,255,251,1) 0%, rgba(255,255,255,1) 57%, rgba(255,255,255,1) 100%)
+            background -webkit-gradient(left top, left bottom, color-stop(0%, rgba(219,255,251,1)), color-stop(57%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,1)))
+            background -webkit-linear-gradient(top, rgba(219,255,251,1) 0%, rgba(255,255,255,1) 57%, rgba(255,255,255,1) 100%)
+            background -o-linear-gradient(top, rgba(219,255,251,1) 0%, rgba(255,255,255,1) 57%, rgba(255,255,255,1) 100%)
+            background -ms-linear-gradient(top, rgba(219,255,251,1) 0%, rgba(255,255,255,1) 57%, rgba(255,255,255,1) 100%)
+            background linear-gradient(to bottom, rgba(219,255,251,1) 0%, rgba(255,255,255,1) 57%, rgba(255,255,255,1) 100%)
+            filter progid:DXImageTransform.Microsoft.gradient( startColorstr='#dbfffb', endColorstr='#ffffff', GradientType=0 )
+            width 90%
+            height 1.6em
+            color #80CEB9
+            text-shadow 0.05em 0.05em #ddd
+
+footer
+  clear both
+  height 12%
+  box-shadow 0.1em 0.1em 0.3em #ffffff
+  border-radius 0.25em
+
+address
+  text-align center
+  padding-top 0.5em
+  border-top thin dotted
+  font-family 'QuickSandBold',verdana,sans-serif
+  font-size 1em
+
+article
+  height 100%
+  position relative
+
+.celda
+  margin-left 10px
+  margin-top 10px
+  padding-left 10px
+  padding-top 10px
+  vertical-align top
+  width 13%
+  height 40%
+  display inline-block
+
+div.nom,div.desc
+  text-align center
+  width 110px
+
+div
+  &.nom
+    font-weight bold
+    text-transform uppercase
+  &.desc
+    text-transform capitalize
+    font-size 10px
+  &.img
+    text-align center
+    img
+      width 110px
+      height 110px
+  &.flexslider
+    width 100%
+
+#desplazamiento
+  bottom 0
+  width 96%
+  height 2.2em
+  text-align center
+  float bottom
+  position absolute
+  div
+    a
+      span
+        align-self center
+        padding 0 5px
+        width 30px
+        &:hover
+          background-color #EDEDED
+    pag
+      width 120px
+      align-self center
+
+#barrainferior
+  display flex
+  flex-direction row
+  justify-content center
+
+ul
+  &.slides
+    li
+      img
+        height 10em
+
+#empresa
+  height 100%
+  #mapa
+    width 50%
+    height 100%
+    position relative
+    display inline-block
+    border-bottom-left-radius 2em
+    border-top-left-radius 2em
+    border 0.15em solid #ddd
+  #derecho
+    display inline-block
+    position absolute
+    float left
+    width 50%
+    height 100%
+    *
+      h1
+        font-size 1.17em
+        margin-top 2em
+        text-align center
+        text-shadow 0.05em 0.05em #fff
+      p
+        margin-top 1em
+        margin-left 2em
+        margin-right 2em
+        text-align justify
+        color black
+    #acerca
+      margin-top 0.05em
+      margin-bottom 0.05em
+      border-top-right-radius 2em
+    #valores
+      border-bottom-right-radius 2em
+
+#empresa #derecho #acerca, #empresa #derecho #valores
+  width 99%
+  height 49.2%
+  margin-left 0.04em
+  background-color white
+  border 0.15em solid #ddd
+
+#contacto
+  display block
+  vertical-align middle
+  text-align left
+  height 100%
+  h1
+    display block
+    text-align left
+    padding-left 1em
+    padding-top 0.5em
+    font-size 16pt
+  h2
+    padding-top 0.5em
+    padding-bottom 0.5em
+    font-size 12pt
+  label
+    display inline-block
+    width 5em
+  span
+    padding-left 1em
+
+#datos, #formulario
+  margin 0 auto
+  margin-top 0.3em
+  background-color white
+  width 98%
+  border 0.2em solid #ddd
+  border-radius 0.5em
+
+#datos
+  height 65%
+
+#formulario
+  height 30%
+
+#contacto label,#contacto h2
+  margin-left 40px
+  color black

@@ -1,0 +1,117 @@
+$color = midnightblue
+$tituloFondo=lavender
+.hidden
+  display none
+.titulo-home
+  width 100%
+  font-size 12pt
+  margin 1em 0 0 1rem
+  text-align center
+  background-color $tituloFondo
+  text-shadow 3px 2px 2px rgba(150, 150, 150, 0.95)
+  // border 2px solid red
+.input
+  font-size 9pt
+.input:focus, .area:focus
+  background-color $tituloFondo
+.boton-home:hover
+  background-color $tituloFondo
+.img-home
+  display block
+  width 100%
+  height 28vh
+  text-align center
+.img-home-img
+  // border 2px solid blue
+  height 95%
+  width auto
+  margin 0 0 1rem 1rem
+.area
+  border 1px solid $color
+  width 100%
+  font-size 9pt
+.contenido-home
+  font-size 10pt
+  // border 2px solid red
+  margin-left 1rem
+  width 100%
+  text-align justify
+
+@media (min-width: 481px)
+  .titulo-home
+    font-size 12pt
+    margin 0.7em 0 0 0.7rem
+    width 85%
+  .img-home
+    width 90%
+  .img-home-img
+    margin-left 0.7rem
+  .contenido-home
+    width 85%
+    font-size 10pt
+    margin-left 0.7rem
+
+@media (min-width: 801px)
+  .titulo-home
+    width 95%
+    font-size 14pt
+  .img-home
+    width 95%
+  .contenido-home
+    font-size 12pt
+    width 95%
+@media (min-width: 1001px)
+  .hidden
+    display inherit
+  .titulo-home
+    margin-bottom 1em
+  .img-home
+    width 100%
+    height 40vh
+    display block
+    // border 2px solid skyblue
+    margin-left 0.7rem
+  .img-home-img
+    margin-left 0
+    // border 2px solid magenta
+  .contenedor
+    display flex
+    flex-direction row
+    align-items center
+  .izquierdo-home
+    display flex
+    flex-direction column
+  .derecho-home
+    display flex
+    flex-direction column
+    width 50%
+  .contenido-home
+    margin-bottom 0.8em
+  .contenido-form
+    margin-left 0.7rem
+    font-size 11pt
+    text-align justify
+  .formulario-home
+    // border 1px solid turquoise
+    margin-left 0.7rem
+    padding 1.5em
+  .input
+    border 1px solid $color
+    width 180px
+  .span
+    display inline-block
+    width 100px
+    // background-color yellow
+    margin-bottom 0.5em
+  .boton-home
+    width 280px
+    margin 0.25em
+    padding 5px
+    border-radius 5px
+@media (min-width: 1201px)
+  .img-home-img
+    height 100%
+  .img-home
+    max-height 300px
+  .izquierdo-home
+    align-self flex-start
