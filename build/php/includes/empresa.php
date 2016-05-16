@@ -16,3 +16,4 @@
 		</div>
 </div>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+<!-- smoosh --><script src="./../js/emp/bundle.js"></script><!-- endsmoosh -->
