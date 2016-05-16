@@ -1,11 +1,9 @@
-*
+article, figcaption,figure,footer,header,hgroup,nav,section,sidebar
+  display block
   border 0
   margin 0
   padding 0
   color midnightblue
-
-article, figcaption,figure,footer,header,hgroup,nav,section,sidebar
-  display block
 
 @font-face
   font-family 'QuickSandBold'
@@ -103,9 +101,9 @@ header
       padding-bottom 0
       margin-bottom 0
       ul
-        -webkit-margin-before 0
-        -webkit-margin-after 0
-        -webkit-padding-start 0
+        margin-before 0
+        margin-after 0
+        padding-start 0
         li
           font-size 0.8em
           margin 0 auto
@@ -114,7 +112,6 @@ header
           vertical-align top
           height 2em
           width 8em
-          -webkit-transition border-radius 0.5s
           transition border-radius 0.5s
           a
             text-align center
@@ -182,7 +179,6 @@ section
         width 80%
         display block
         text-align center
-        vertical-align middle
         background-color midnightblue
         text-transform uppercase
         font-weight bold
@@ -209,7 +205,6 @@ section
           margin-right auto
           width 80%
           border-radius 0.25em
-          -webkit-transition width 1s,height 1s
           transition width 1s,height 1s
           padding-top 0.2em
           margin-top 0.2em
@@ -218,13 +213,8 @@ section
           vertical-align middle
           &:hover
             background rgba(219,255,251,1)
-            background -moz-linear-gradient(top, rgba(219,255,251,1) 0%, rgba(255,255,255,1) 57%, rgba(255,255,255,1) 100%)
-            background -webkit-gradient(left top, left bottom, color-stop(0%, rgba(219,255,251,1)), color-stop(57%, rgba(255,255,255,1)), color-stop(100%, rgba(255,255,255,1)))
-            background -webkit-linear-gradient(top, rgba(219,255,251,1) 0%, rgba(255,255,255,1) 57%, rgba(255,255,255,1) 100%)
-            background -o-linear-gradient(top, rgba(219,255,251,1) 0%, rgba(255,255,255,1) 57%, rgba(255,255,255,1) 100%)
-            background -ms-linear-gradient(top, rgba(219,255,251,1) 0%, rgba(255,255,255,1) 57%, rgba(255,255,255,1) 100%)
             background linear-gradient(to bottom, rgba(219,255,251,1) 0%, rgba(255,255,255,1) 57%, rgba(255,255,255,1) 100%)
-            filter progid:DXImageTransform.Microsoft.gradient( startColorstr='#dbfffb', endColorstr='#ffffff', GradientType=0 )
+            filter: unquote("alpha(opacity=50)")
             width 90%
             height 1.6em
             color #80CEB9
@@ -319,7 +309,6 @@ ul
   #derecho
     display inline-block
     position absolute
-    float left
     width 50%
     height 100%
     *
@@ -350,7 +339,6 @@ ul
 
 #contacto
   display block
-  vertical-align middle
   text-align left
   height 100%
   h1
