@@ -1,10 +1,14 @@
-article, figcaption,figure,footer,header,hgroup,nav,section,sidebar
-  display block
+body,a:visited,a:link,a:hover
+  color midnightblue
+a
+  text-decoration none
+
+article,figcaption,figure,footer,header,hgroup,nav,section,sidebar
   border 0
   margin 0
   padding 0
   color midnightblue
-
+  display block
 @font-face
   font-family 'QuickSandBold'
   src url('./assets/fuentes/qsb/quicksandbold.eot#') format('eot'),
@@ -170,7 +174,8 @@ section
     float left
     overflow auto
     #btnProductosMenu
-      caja
+      cursor default
+      & caja
         margin-top 37px
     a
       caja
