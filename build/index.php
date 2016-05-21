@@ -11,12 +11,16 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
 	<link rel="author" type="text/plain" href="humans.txt" />
+	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<link href='https://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/octicons/3.5.0/octicons.min.css"/>
 	<!-- smoosh --><link rel="stylesheet" href="./css/main.css"/><!-- endsmoosh -->
 	<!--[if lt IE 9]>
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js></script>
 	<!--[endif]-->
+	<!--comentario tonto -->
 	<?php require_once "./php/encabezados-seo/canonicalizacion.php"; ?>
 </head>
 <body>
