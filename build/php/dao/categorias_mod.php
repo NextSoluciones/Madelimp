@@ -30,17 +30,6 @@ class catModelo extends modelo
         $result -> closeCursor();
         return $resultado;
     }
-    // public function get_foto($cod)
-    // {
-    //     $params = array(':cod' => $cod);
-    //     $result=$this->_db->prepare('
-    //     SELECT foto FROM producto
-    //     WHERE id = :cod');
-    //     $result -> execute($params);
-    //     $resultado=$result -> fetchAll(PDO::FETCH_ASSOC);
-    //     $result -> closeCursor();
-    //     return $resultado;
-    // }
     public function get_categoria()
     {
         $result=$this->_db->prepare('
