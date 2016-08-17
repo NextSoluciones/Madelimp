@@ -24,7 +24,7 @@
 	<?php require_once "./php/encabezados-seo/canonicalizacion.php"; ?>
 </head>
 <body>
-	<header>
+	<header id="header">
 		<caja1>
 			<div id="idimg">
 				<img src="./img/logo.png" alt="logo de la empresa Madelimp" class='logo'>
@@ -62,7 +62,7 @@
 			</ul>
 		</sidebar>
 		<article>
-			<?php $comando = isset($_GET["comando"])?$_GET["comando"]:"inicio"; include './php/includes/procesa_contenido.php'; ?>
+				<?php $comando = isset($_GET["comando"])?$_GET["comando"]:"inicio"; include './php/includes/procesa_contenido.php'; ?>								
 		</article>
 	</section>
 	<footer>

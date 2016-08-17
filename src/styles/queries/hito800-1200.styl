@@ -14,24 +14,31 @@
         height 60px
         text-align right
         display inline-block
-  $img = 11vw
+
+    & #barraNav
+      width: 55%
+  $img = 10vw
+
   section
     & #sideMenu
       font-size 10pt
       width 20%
+
     & article
-      padding 25px 0 0 5px
       width 79%
       & .celda
         display inline-block
         width $img
         margin 0
+        margin-top: 10px
+        margin-left: 10px
         padding 0 0 10px 0
         & .desc,
         & .nom
           width $img
         & .img
           width $img
+          height: $img
           & img
             width $img
             height $img
@@ -41,16 +48,18 @@
         & #derecho
           width 47%
           height 80.5%
-          & #acerca,
-          & #valores
-            margin 0
-            padding 0
           & #acerca h1,
           & #valores h1
-            font-size 14pt
+            font-size 12pt
           & #acerca p,
           & #valores p
             font-size 10pt
+          & #acerca
+            padding-bottom: 5.8%
+      & #contacto
+        height 90%
+        & #datos
+          height: 100%
   footer
     font-size 12pt
     padding-top 5px

@@ -1,117 +1,244 @@
 $color = $grupo1
 $tituloFondo=lavender
-.hidden
-  display none
+
 .titulo-home
-  width 100%
-  font-size 16pt
-  margin 1em 0 0 1rem
+  margin-top: 5px
+  font-size 14pt
+  padding: 10px
   text-align center
-  background-color $tituloFondo
   text-shadow 3px 2px 2px rgba(150, 150, 150, 0.95)
-  // border 2px solid red
-.input
-  font-size 9pt
-.input:focus, .area:focus
-  background-color $tituloFondo
-.boton-home:hover
-  background-color $tituloFondo
-.img-home
-  display block
-  width 100%
-  height 28vh
-  text-align center
-.img-home-img
-  // border 2px solid blue
-  height 95%
-  width auto
-  margin 0 0 1rem 1rem
-.area
-  border 1px solid $color
-  width 100%
-  font-size 9pt
-.contenido-home
+  line-height 15pt
+
+.hero-home,.copy-home-cta
   font-size 10pt
-  // border 2px solid red
-  margin-left 1rem
-  width 100%
+  padding: 0 5px 5px 5px
   text-align justify
+  letter-spacing +1px
+  line-height 12pt
+
+.features
+  display flex
+  justify-content: space-around;
+.feature
+  width: 55px
+  height: 55px
+
+.caption-img-home
+  display: none;
+
+.img-cont-home
+  width: 45px
+  height: 45px
+  background-color: #8C9B57
+  padding: 5px
+  border-radius: 5px
+
+.img
+  width: 100%
+  height: 100%
+  background-repeat:no-repeat;
+  background-size:cover;
+
+.feature0
+  background-image: url("img/productos.jpg")
+.feature1
+  background-image: url("img/categorias.jpg")
+.feature2
+  background-image: url("img/contacto.jpg")
+.feature3
+  background-image: url("img/mapa.jpg")
+
+.circulo {
+ width: 90px;
+ height:90px;
+ border-radius: 50%;
+ background-color: #8C9B57;
+ opacity: 0.65
+ position: fixed;
+ bottom: 60px;
+ right: 12px;
+ z-index: 2
+}
+
+.circulo.enfasis {
+ opacity: 1
+ z-index: 2
+}
+
+.lupa{
+  position: absolute;
+  top: 0
+  right: 0
+  left: 0
+  bottom: 0
+  margin:auto;
+  background-size: contain;
+  z-index: 2
+}
+.buscador{
+  border: 10px solid #8C9B57
+  border-right: 25px solid #8C9B57
+  height: 40px
+  position: fixed;
+  bottom: 70px;
+  right: 40px;
+  width: 0
+  background: white;
+  opacity: 0
+  border-radius: 5px
+  padding: 5px
+  font-family: Roboto
+  z-index: 2
+  transition: all 1s ease;
+  padding-left: 10px
+}
+.buscador.mostrar{
+  padding-left: 10px
+  right: 70px;
+  width: 60vw
+  opacity: 1
+  z-index: 2
+}
+header.solapar{
+  z-index: 0
+}
 
 @media (min-width: 481px)
-  .titulo-home
-    font-size 12pt
-    margin 0.7em 0 0 0.7rem
-    width 85%
-  .img-home
-    width 90%
-  .img-home-img
-    margin-left 0.7rem
-  .contenido-home
-    width 85%
-    font-size 10pt
-    margin-left 0.7rem
 
-@media (min-width: 801px)
   .titulo-home
-    width 95%
+    margin-top: 20px
+    padding-right: 40px
+    width: 80%
     font-size 16pt
-  .img-home
-    width 95%
-  .contenido-home
+    letter-spacing +0.5px
+
+  .hero-home,.copy-home-cta
+    padding-right: 40px
+    width: 80%
     font-size 12pt
-    width 95%
-@media (min-width: 1001px)
-  .hidden
-    display inherit
+
+  .features
+    width: 80%
+
+
+  .feature
+    width: 65px
+    height: 85px
+
+  #buscador-home
+    width: 80%
+    height:40px;
+    border-radius: 5px;
+    margin-left: 5px
+    background-color: #8C9B57;
+    display: table;
+    border-collapse:separate;
+    border-spacing:10px;
+
+  .buscador{
+    display: table-cell;
+    position: static;
+    width: 100%
+    opacity: 1
+    border: none
+    padding: 0
+    padding-left: 10px
+  }
+
+  .circulo {
+    display: table-cell;
+    position: static;
+    border-radius: 5px
+    background-color:  #8C9B57
+    height: 40px;
+    width: 40px
+    opacity: 1
+  }
+
+  .lupa{
+    width: 40px
+    height: 40px
+    position: static;
+    vertical-align: middle;
+    padding-left: 10px
+  }
+
+  .img-cont-home
+    width: 55px
+    height: 55px
+    border-bottom-left-radius: 0px
+    border-bottom-right-radius: 0px
+
+  .caption-img-home
+    width: 65px;
+    display: block;
+    font-size: 10pt;
+    background-color: #ededed
+
+  .normal
+    display: none;
+
+  .pClave
+    display: block;
+    width: 65px
+    text-align: center;
+    text-transform: capitalize;
+
+@media (min-width: 641px)
+
+
+  .feature
+    width: 13vw
+    padding: 5px
+    height: auto;
+
+  .img-cont-home
+    width: 13vw
+    height: 13vw
+    margin-left: -5px
+
+  .caption-img-home
+    width: 13vw;
+    padding: 0 5px 0 5px
+    display: block;
+    font-size: 12pt;
+    margin-left: -5px
+
+  .pClave
+    width: 13vw
+
   .titulo-home
-    margin-bottom 1em
-  .img-home
-    width 100%
-    height 40vh
-    display block
-    // border 2px solid skyblue
-    margin-left 0.7rem
-  .img-home-img
-    margin-left 0
-    // border 2px solid magenta
-  .contenedor
-    display flex
-    flex-direction row
-    align-items center
-  .izquierdo-home
-    display flex
-    flex-direction column
-  .derecho-home
-    display flex
-    flex-direction column
-    width 50%
-  .contenido-home
-    margin-bottom 0.8em
-  .contenido-form
-    margin-left 0.7rem
-    font-size 11pt
-    text-align justify
-  .formulario-home
-    // border 1px solid turquoise
-    margin-left 0.7rem
-    padding 1.5em
-  .input
-    border 1px solid $color
-    width 180px
-  .span
-    display inline-block
-    width 100px
-    // background-color yellow
-    margin-bottom 0.5em
-  .boton-home
-    width 280px
-    margin 0.25em
-    padding 5px
-    border-radius 5px
-@media (min-width: 1201px)
-  .img-home-img
-    height 100%
-  .img-home
-    max-height 300px
-  .izquierdo-home
-    align-self flex-start
+    padding-top: 0
+
+@media (min-width: 801px) and (max-width: 1200px)
+
+  .hero-home,.copy-home-cta,.features,#buscador-home,.titulo-home
+    width: 95%
+    margin-left: 15px
+    margin-right: 15px
+
+  .hero-home,.copy-home-cta
+    margin-top: 2px
+    margin-bottom: 2px
+  .feature
+    width: 12vw
+
+  .img-cont-home
+    width: 12vw
+    height: 12vw
+
+  .caption-img-home
+    display: table;
+    width: 12vw
+    font-size: 10pt
+    height: 6vw
+    text-align: center;
+
+  .text-conten
+    display: table-cell;
+    vertical-align: middle;
+  .pClave
+    display: inline;
+    text-transform: none;
+  .normal
+    display: inline;

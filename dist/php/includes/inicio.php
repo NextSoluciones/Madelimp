@@ -1,88 +1,39 @@
-<?php
-//Variables post del formulario
-$txtNombre=$_POST['nombre'];
-$txtEmpresa=$_POST['empresa'];
-$txtCorreo=$_POST['email'];
-$txtTelefono=$_POST['telefono'];
-$txaMensaje=$_POST['asunto'];
-$btnEnviar=$_POST['enviar'];
-$emailcontacto="ventas@nslatino.com";
-$mailserver="nextsoluciones.nslatino.com";
-$mailuser="webmaster@madelimp.com";
-$mailpass="wmMadelimp.4833";
-$nombreContacto="Julio Acuña";
-$nombreUser="Web";
-if (isset($btnEnviar)) {
-    //poner aqui el codigo de sendmail para enviar correo
-		$mensaje = "Datos del mensaje:<br>";
-		$mensaje .= "---------------------------------------------------------------------------<br>";
-	    $mensaje .= "Nombre   : " . $txtNombre . "<br>";
-	    $mensaje .= "Correo    : " . $txtCorreo . "<br>";
-	    $mensaje .= "Empresa   : " . $txtEmpresa . "<br>";
-	    $mensaje .= "Telefono  : " . $txtTelefono . "<br>";
-	    $mensaje .= "Mensaje   : " . $txaMensaje . "<br>";
-		$mensaje .= "---------------------------------------------------------------------------<br>";
-		$para    = $emailcontacto;
-		$asunto  = "Consulta desde pagina web  ";
-		// echo "<script>var URLactual = window.location;alert(URLactual);</script>";
-		require('php/includes/sendmail/class.phpmailer.php');
-		$mail = new phpmailer();
-		$mail->SetLanguage("es", "");
-    $mail->CharSet = "UTF-8";
-    $mail->IsSMTP();
-    $mail->SMTPAuth = true;
-    $mail->SMTPSecure = 'tls';
-    $mail->Host      = $mailserver;
-    $mail->Port = 25;
+<h1 class="titulo-home">Artículos de Limpieza para el hogar y la oficina</h1>
+<p class="hero-home">
+Bienvenido a nuestro sitio web, si est&aacute; buscando productos de limpieza, al por mayor o para distribuidores, consulte lo que tenemos para usted.
+</p>
+<div class="features">
+  <div class="feature">
+    <div class="img-cont-home">
+      <div class="img feature0"></div>
+    </div>
+    <h2 class="caption-img-home"><span class="text-conten"><span class="pClave">Variedad</span><span class="normal"> en productos</span></span></h2>
+  </div>
 
-		$mail->Username = $mailuser;
-    $mail->Password = $mailpass;
+  <div class="feature">
+    <div class="img-cont-home">
+      <div class="img feature1"></div>
+    </div>
+    <h2 class="caption-img-home"><span class="text-conten"><span class="pClave">Diversidad</span><span class="normal"> de categor&iacute;as</span></span></h2>
+  </div>
 
-		$mail->AddAddress($emailcontacto, $nombreContacto);
-    $mail->AddReplyTo($txtCorreo, $txtNombre);
-    $mail->SetFrom($mailuser, $nombreUser);
+  <div class="feature">
+    <div class="img-cont-home">
+      <div class="img feature2"></div>
+    </div>
+    <h2 class="caption-img-home"><span class="text-conten"><span class="normal">P&oacute;ngase en </span><span class="pClave">contacto</span><span class="normal"> con nosotros</span></span></h2>
+  </div>
 
-		$mail->IsHTML(true);
-		$mail->Subject   = $asunto;
-		$mail->Body      = $mensaje;
-		$mail->AltBody	 = htmlspecialchars($mensaje);
-		if( !$mail->Send() ){
-		echo "<script type='text/javascript'>
-		alert('Error al enviar el mensaje');
-		</script>";}
-		else{
-		echo  '<script type="text/javascript">
-		alert("Su consulta ha sido enviada.\nPronto nos pondremos en contacto con usted");
-		</script>';}
-}
-echo '
-	<h1 class="titulo-home">Artículos de Limpieza para el Hogar y la Empresa</h1>
-	<div class="contenedor">
-		<div class="izquierdo-home">
-			<picture class="img-home">
-				<img class="img-home-img lazyload loading" src="assets/loading.gif" data-src="assets/productos-de-limpieza-home.jpg" alt="productos-de-limpieza-home"></img>
-			</picture>
-			<p class="contenido-home">Contamos con una amplia variedad de artículos de limpieza. Encuentre aquí soluciones para el hogar y la empresa. Estamos en Lima - Per&uacute;.</p>
-		</div>
-		<div class="derecho-home">
-			<p class="contenido-form hidden">Si desea m&aacute;s informaci&oacute;n puede indicarnos su correo electr&oacute;nico y
-			nos pondremos en contacto con usted a la brevedad:</p>
-			<div class="formulario-home hidden">
-				<form action="inicio" method="post">
-					<span class="nombre-home span">Nombre: </span>
-						<input type="text" name="nombre" class="input" required/><br/>
-					<span class="empresa-home span">Empresa: </span>
-						<input type="text" name="empresa" class="input"/><br/>
-					<span class="correo-home span">Correo: </span>
-						<input type="email" name="email" class="input" required/><br/>
-					<span class="telefono-home span">Telefono: </span>
-						<input type="tel" name="telefono" class="input"/><br/>
-          <span class="asunto-home span">Consulta: </span>
-						<textarea name="asunto" class="area" rows="5"></textarea>
-					<input type="submit" value="Enviar" name="enviar" class="boton-home">
-				</form>
-			</div>
-		</div>
-	</div>
-	';
-?>
+  <div class="feature">
+    <div class="img-cont-home">
+      <div class="img feature3"></div>
+    </div>
+    <h2 class="caption-img-home"><span class="text-conten"><span class="normal">Ub&iacute;quenos en el </span><span class="pClave">mapa</span></span></h2>
+  </div>
+</div>
+
+<p class="copy-home-cta">Encuentre el producto que est&aacute; buscando en las categor&iacute;as de la secci&oacute;n izquierda &oacute; ingr&eacute;selo en el buscador.</p>
+<div id="buscador-home">
+    <input id="buscador-input" type="text" name="palabra" placeholder="Ingrese producto a buscar" class="buscador"/>
+    <div class="circulo" id="buscar"><img class=lupa alt="lupa para realizar busqueda" src="img/lupa.png" /></div>
+</div>
