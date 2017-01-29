@@ -1,0 +1,67 @@
+@media (min-width: 1201px) and (max-width: 1365px)
+  header
+    & caja1
+      position absolute
+      top 0
+      left 5.4vw
+      width 100%
+      height auto
+      & #textologo
+        padding-left 0
+        font-size 18pt
+      & #idimg
+        width 60px
+        height 60px
+        text-align right
+        display inline-block
+
+    & #barraNav
+      width: 55%
+  $img = 100px
+
+  section
+    & #sideMenu
+      font-size 10pt
+      width 20%
+
+    & article
+      width 79%
+      & .celda
+        display inline-block
+        width $img
+        margin 0
+        margin-top: 10px
+        margin-left: 10px
+        padding 0 0 10px 0
+        & .desc,
+        & .nom
+          width $img
+        & .img
+          width $img
+          height: $img
+          & img
+            width $img
+            height $img
+      & #empresa
+        padding 20px 10px
+        height 85%
+        & #derecho
+          width 47%
+          height 80.5%
+          & #acerca h1,
+          & #valores h1
+            font-size 12pt
+          & #acerca p,
+          & #valores p
+            font-size 10pt
+          & #acerca
+            padding-bottom: 5.8%
+      & #contacto
+        height 90%
+        & #datos
+          height: 100%
+  footer
+    font-size 12pt
+    padding-top 5px
+    address
+      margin-top 5px
