@@ -54,11 +54,20 @@ module.exports = {
           var hammerCirculo = new Hammer(circulo);
           var header = document.getElementById('header');
           var mq = window.matchMedia( "(max-width: 480px)" );
+          var buscador=document.getElementById('buscador-input');
 
           function busqueda(){
-            var cadena="funcion buscar disparada";
+            var cadena=buscador.value;
+            buscador.value="";
             alert(cadena);
           }
+
+          buscador.addEventListener("keypress", function(evt){
+            var val = evt.keyCode;
+            if(val == 13) {
+              busqueda();
+            }
+          });
 
           hammerCirculo.on('tap', function(e) {
             console.log(e);
