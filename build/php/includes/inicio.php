@@ -34,6 +34,6 @@ Bienvenido a nuestro sitio web, si est&aacute; buscando productos de limpieza, a
 
 <p class="copy-home-cta">Encuentre el producto que est&aacute; buscando en las categor&iacute;as de la secci&oacute;n izquierda &oacute; ingr&eacute;selo en el buscador.</p>
 <div id="buscador-home">
-    <input id="buscador-input" type="text" name="palabra" placeholder="Ingrese producto a buscar" class="buscador"/>
+    <input id="buscador-input" type="text" name="palabra" placeholder="Ingrese producto a buscar" class="buscador" autofocus/>
     <div class="circulo" id="buscar"><img class=lupa alt="lupa para realizar busqueda" src="img/lupa.png" /></div>
 </div>
