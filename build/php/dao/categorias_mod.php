@@ -18,16 +18,24 @@ class catModelo extends modelo
         $result -> closeCursor();
         return $resultado;
     }
-    public function get_productos($cat)
+    public function get_productos($cat,$data)
     {
-        $params = array(':cat' => $cat);
-        $result=$this->_db->prepare('
-        SELECT id,nombre,descripcion,img FROM producto
-        WHERE (id_categoria = :cat)
-        order by id asc');
-        $result -> execute($params);
-        $resultado=$result -> fetchAll(PDO::FETCH_ASSOC);
-        $result -> closeCursor();
+        if ($data==1) {
+          $params = array(':cat' => $cat);
+          $result=$this->_db->prepare('
+          SELECT id,nombre,descripcion,img FROM producto
+          WHERE (id_categoria = :cat)
+          order by id asc');
+          //Esto ira fuera del if como codigo comun
+          $result -> execute($params);
+          $resultado=$result -> fetchAll(PDO::FETCH_ASSOC);
+          $result -> closeCursor();
+        }
+        else {
+          # code...
+          $resultado="";
+        }
+
         return $resultado;
     }
     public function get_categoria()

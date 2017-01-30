@@ -1,5 +1,5 @@
 <?php
-	if (strlen($com)==0){
+	if (strlen($com)==0||$com="busqueda"){
 		?>
 <title>Art&iacute;culos de Limpieza</title>
 <meta name="description" content="Articulos de limpieza para el hogar, venta a distribuidores en Villa el Salvador - Lima - Peru. Somos Mayoristas" />

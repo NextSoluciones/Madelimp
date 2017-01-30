@@ -59,7 +59,7 @@ module.exports = {
           function busqueda(){
             var cadena=buscador.value;
             buscador.value="";
-            alert(cadena);
+            window.location = "busqueda-"+cadena;
           }
 
           buscador.addEventListener("keypress", function(evt){

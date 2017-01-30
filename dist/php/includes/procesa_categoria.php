@@ -1,28 +1,42 @@
 <?php
 	require_once 'php/dao/categorias_mod.php';
+
+			//cargamos la instancia para saber si estamos en local o remoto
+			$instancia_t=$catModel->get_instancia();
+			foreach ($instancia_t as $fila) {
+						$valor=$fila['valor'];
+						if (strlen($valor)>0)
+						$instancia=$valor;
+			}
+
+
       $pga=$_GET['pga'];
       $pagActual=($pga>0)?$pga:1;
       $a=$_GET['act'];
-      $act=($a>0)?$a:1;//accion a ejecutar
-	$catModel=new catModelo();
+      $act=($a>0)?$a:1;
+
+			//accion a ejecutar
+			$catModel=new catModelo();
       $nom=$comando;
-      $p_t=$catModel->get_id($nom);
-      foreach ($p_t as $fila) {
-            $id=$fila['id'];
-            if ($id>0)
-            $p=$id;
-      }
-      //cargamos la instancia para saber si estamos en local o remoto
-      $instancia_t=$catModel->get_instancia();
-      foreach ($instancia_t as $fila) {
-            $valor=$fila['valor'];
-            if (strlen($valor)>0)
-            $instancia=$valor;
-      }
+			if (!($nom=="busqueda")){
+				$p_t=$catModel->get_id($nom);
+	      foreach ($p_t as $fila) {
+	            $id=$fila['id'];
+	            if ($id>0)
+	            $p=$id;
+	      }
+				$d=1;
+			}else {
+				$p=$nom;
+				$d=$data;
+				echo "comando= ".$p."<br/>";
+				echo "data= ".$d."<br/>";
+			}
+
       /*echo "<script language='JavaScript'>
                 alert('idCategoria: ".$p."');
                 </script>";*/
-      $productos=$catModel->get_productos($p);
+      $productos=$catModel->get_productos($p,$d);
       require_once 'php/lib/paginador.php';
       $paginaDatos=new Paginador();
       // if (empty($ancho))
