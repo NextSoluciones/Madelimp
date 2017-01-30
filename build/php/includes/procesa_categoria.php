@@ -29,14 +29,13 @@
 			}else {
 				$p=$nom;
 				$d=$data;
-				echo "comando= ".$p."<br/>";
-				echo "data= ".$d."<br/>";
 			}
 
       /*echo "<script language='JavaScript'>
                 alert('idCategoria: ".$p."');
                 </script>";*/
       $productos=$catModel->get_productos($p,$d);
+			//var_dump($productos);
       require_once 'php/lib/paginador.php';
       $paginaDatos=new Paginador();
       // if (empty($ancho))

@@ -26,16 +26,18 @@ class catModelo extends modelo
           SELECT id,nombre,descripcion,img FROM producto
           WHERE (id_categoria = :cat)
           order by id asc');
-          //Esto ira fuera del if como codigo comun
-          $result -> execute($params);
-          $resultado=$result -> fetchAll(PDO::FETCH_ASSOC);
-          $result -> closeCursor();
+
         }
         else {
-          # code...
-          $resultado="";
+          $params = array(':data' => $data);
+          $result=$this->_db->prepare('
+          SELECT *, MATCH (nombre, descripcion) AGAINST (:data) AS puntuacion
+FROM producto WHERE MATCH(nombre, descripcion) AGAINST (:data IN BOOLEAN MODE)
+ORDER BY puntuacion DESC LIMIT 50');
         }
-
+        $result -> execute($params);
+        $resultado=$result -> fetchAll(PDO::FETCH_ASSOC);
+        $result -> closeCursor();
         return $resultado;
     }
     public function get_categoria()
