@@ -5,28 +5,28 @@ Bienvenido a nuestro sitio web, si est&aacute; buscando productos de limpieza, a
 <div class="features">
   <div class="feature">
     <div class="img-cont-home">
-      <div class="img feature0"></div>
+      <div class="img-h feature0"></div>
     </div>
     <h2 class="caption-img-home"><span class="text-conten"><span class="pClave">Variedad</span><span class="normal"> en productos</span></span></h2>
   </div>
 
   <div class="feature">
     <div class="img-cont-home">
-      <div class="img feature1"></div>
+      <div class="img-h feature1"></div>
     </div>
     <h2 class="caption-img-home"><span class="text-conten"><span class="pClave">Diversidad</span><span class="normal"> de categor&iacute;as</span></span></h2>
   </div>
 
   <div class="feature">
     <div class="img-cont-home">
-      <div class="img feature2"></div>
+      <div class="img-h feature2"></div>
     </div>
     <h2 class="caption-img-home"><span class="text-conten"><span class="normal">P&oacute;ngase en </span><span class="pClave">contacto</span><span class="normal"> con nosotros</span></span></h2>
   </div>
 
   <div class="feature">
     <div class="img-cont-home">
-      <div class="img feature3"></div>
+      <div class="img-h feature3"></div>
     </div>
     <h2 class="caption-img-home"><span class="text-conten"><span class="normal">Ub&iacute;quenos en el </span><span class="pClave">mapa</span></span></h2>
   </div>
