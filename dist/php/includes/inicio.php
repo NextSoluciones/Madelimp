@@ -5,28 +5,28 @@ Bienvenido a nuestro sitio web, si est&aacute; buscando productos de limpieza, a
 <div class="features">
   <div class="feature">
     <div class="img-cont-home">
-      <div class="img-h feature0"></div>
+      <a href="#"><div class="img-h feature0"></div></a>
     </div>
     <h2 class="caption-img-home"><span class="text-conten"><span class="pClave">Variedad</span><span class="normal"> en productos</span></span></h2>
   </div>
 
   <div class="feature">
     <div class="img-cont-home">
-      <div class="img-h feature1"></div>
+      <a href="#"><div class="img-h feature1"></div></a>
     </div>
     <h2 class="caption-img-home"><span class="text-conten"><span class="pClave">Diversidad</span><span class="normal"> de categor&iacute;as</span></span></h2>
   </div>
 
   <div class="feature">
     <div class="img-cont-home">
-      <div class="img-h feature2"></div>
+      <a href="contacto"><div class="img-h feature2"></div></a> 
     </div>
     <h2 class="caption-img-home"><span class="text-conten"><span class="normal">P&oacute;ngase en </span><span class="pClave">contacto</span><span class="normal"> con nosotros</span></span></h2>
   </div>
 
   <div class="feature">
     <div class="img-cont-home">
-      <div class="img-h feature3"></div>
+      <a href="empresa"><div class="img-h feature3"></div></a>
     </div>
     <h2 class="caption-img-home"><span class="text-conten"><span class="normal">Ub&iacute;quenos en el </span><span class="pClave">mapa</span></span></h2>
   </div>
