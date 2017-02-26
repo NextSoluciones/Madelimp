@@ -1,4 +1,4 @@
-<h1 class="titulo-home">Artículos de Limpieza para el hogar y la oficina</h1>
+<h1 class="titulo-home">Productos de Limpieza para el hogar y la oficina</h1>
 <p class="hero-home">
 Bienvenido a nuestro sitio web, si est&aacute; buscando productos de limpieza, al por mayor o para distribuidores, consulte lo que tenemos para usted.
 </p>
@@ -19,7 +19,7 @@ Bienvenido a nuestro sitio web, si est&aacute; buscando productos de limpieza, a
 
   <div class="feature">
     <div class="img-cont-home">
-      <a href="contacto"><div class="img-h feature2"></div></a> 
+      <a href="contacto"><div class="img-h feature2"></div></a>
     </div>
     <h2 class="caption-img-home"><span class="text-conten"><span class="normal">P&oacute;ngase en </span><span class="pClave">contacto</span><span class="normal"> con nosotros</span></span></h2>
   </div>

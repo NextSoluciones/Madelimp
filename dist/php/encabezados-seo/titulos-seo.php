@@ -2,16 +2,16 @@
 	if (strlen($com)==0||$com="busqueda"){
 		?>
 <title>Art&iacute;culos de Limpieza</title>
-<meta name="description" content="Articulos de limpieza para el hogar, venta a distribuidores en Villa el Salvador - Lima - Peru. Somos Mayoristas" />
-<META name="keywords" content="Inversiones, Madelimp, SAC, Articulos, Limpieza, Productos, Lima, Perú, hogar, empresa" />
+<meta name="description" content="Productos de limpieza para el hogar, venta a distribuidores en Villa el Salvador - Lima - Peru. Somos Mayoristas" />
+<META name="keywords" content="productos de limpieza, Inversiones, Madelimp, SAC, Articulos, Limpieza, Productos, Lima, Perú, hogar, empresa" />
 <?php
 	}
 
 	if ($com=="inicio"){
 		?>
 <title>Art&iacute;culos de Limpieza - Inicio</title>
-<meta name="description" content="Home - Inicio - Articulos de limpieza para el hogar, venta a distribuidores en Villa el Salvador - Lima - Peru. Somos Mayoristas" />
-<META name="keywords" content="Inversiones, Madelimp, SAC, Articulos, Limpieza, Productos, Lima, Perú, hogar, empresa" />
+<meta name="description" content="Home - Inicio - Productos de limpieza para el hogar, venta a distribuidores en Villa el Salvador - Lima - Peru. Somos Mayoristas" />
+<META name="keywords" content="productos de limpieza, Inversiones, Madelimp, SAC, Articulos, Limpieza, Productos, Lima, Perú, hogar, empresa" />
 <?php
 	}
 
@@ -28,7 +28,7 @@ content="Estamos ubicados en Villa el Salvador, contacte con Julio o Elizabeth p
 		?>
 <title>Misi&oacute;n y visi&oacute;n de la empresa Madelimp SAC</title>
 <meta name="description"
-content="Somos distribuidores de Articulos de limpieza, brindamos los mejores precios. Estamos ubicados en Villa El Salvador-Lima Peru" />
+content="Somos distribuidores de productos de limpieza, brindamos los mejores precios. Estamos ubicados en Villa El Salvador-Lima Peru" />
 <META name="keywords" content="Inversiones, Madelimp, SAC, distribuidores, clientes, visión, precio, comercial, mapa, ubicación" />
 <?php
 	}
@@ -55,7 +55,7 @@ content="Catalogo de los <?=$com?> que ofrecemos. <?php
 	}
 ?>
 " />
-<META name="keywords" content="Inversiones, Madelimp, SAC, productos, <?=$com?> " />
+<META name="keywords" content="productos de limpieza, Inversiones, Madelimp, SAC, productos, <?=$com?> " />
 <?php
 	}
 

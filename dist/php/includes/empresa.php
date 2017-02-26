@@ -3,7 +3,7 @@
 		<div id="derecho">
 			<div id ='acerca'><h1>&iquest;Qui&eacute;nes Somos&#63;</h1>
 				<p>
-				Somos distribuidores l&iacute;deres con ubicaci&oacute;n en Lima Sur, especializados en artículos de limpieza y afines.
+				Somos distribuidores l&iacute;deres con ubicaci&oacute;n en Lima Sur, especializados en productos de limpieza y afines.
 				Contamos con una gran red de clientes que se benefician de nuestros productos.
 				</p>
 			</div>
