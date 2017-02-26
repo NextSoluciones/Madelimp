@@ -1,5 +1,2 @@
 User-agent: *
-Disallow: /material/
-Disallow: /dao/
-Disallow: /diseño/
 Sitemap: https://www.madelimp.com/sitemap.txt
