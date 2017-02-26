@@ -24,6 +24,7 @@
 	<?php require_once "./php/encabezados-seo/canonicalizacion.php"; ?>
 </head>
 <body>
+	<?php include_once("./php/analyticstracking.php") ?>
 	<header id="header">
 		<caja1>
 			<div id="idimg">
