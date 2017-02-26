@@ -62,7 +62,7 @@
 			</ul>
 		</sidebar>
 		<article>
-				<?php $comando = isset($_GET["comando"])?$_GET["comando"]:"inicio"; include './php/includes/procesa_contenido.php'; ?>								
+				<?php $comando = isset($_GET["comando"])?$_GET["comando"]:"inicio"; include './php/includes/procesa_contenido.php'; ?>
 		</article>
 	</section>
 	<footer>
