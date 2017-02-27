@@ -1,6 +1,6 @@
 <?php
 	require_once 'php/dao/categorias_mod.php';
-
+	require_once 'php/lib/funciones.php';
 			//cargamos la instancia para saber si estamos en local o remoto
 			$instancia_t=$catModel->get_instancia();
 			foreach ($instancia_t as $fila) {
@@ -73,22 +73,24 @@
 			$rutaUtf=$row['img'];
       if (($cont<$elemXpag)&&($row['id']>0)){
       $descripcionUtf=$row['descripcion'];
+			$id_producto=$row['id'];
       if ($instancia=="remoto"){
       $nombreUtf=utf8_encode($nombreUtf);
       $descripcionUtf=utf8_encode($descripcionUtf);
-			$rutaUtf=utf8_encode($rutaUtf);
+			$rutaUtf=utf8_encode($rutaUtf);			
       }
+			$urlamigable=urls_amigables($descripcionUtf);
       echo "<div class='celda'>
-      <div class='img'>
+      <a href='producto-$id_producto"."_"."$urlamigable'><div class='img'>
 					<picture>
 						<source media='(min-width: 801px)' srcset='assets/loading.gif' data-srcset='img/img-web/".$rutaUtf."'>
 						<source media='(min-width: 481px)' srcset='assets/loading.gif' data-srcset='img/img-retina/".$rutaUtf."'>
 						<source media='(max-width: 480px)' srcset='assets/loading.gif' data-srcset='img/img-retina/".$rutaUtf." 2x'>
-						<img src='assets/loading.gif' data-src='img/img-movil/".$rutaUtf.
+						<img src='assets/loading.gif' data-src='img/img-mobile/".$rutaUtf.
 			      "' alt='".$descripcionUtf."' title='".$descripcionUtf."' class='lazyload loading'>
 					</picture></div>
 	      <div class='nom'>".$nombreUtf."</div>
-	      <div class='desc'>".$descripcionUtf."</div></div>
+	      <div class='desc'>".$descripcionUtf."</div></div></a>
 	      ";
             }
       $cont++;

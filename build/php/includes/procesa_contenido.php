@@ -5,6 +5,9 @@
 		include 'php/includes/procesa_cabecera.php';
 	}
 	else if (strlen($comando)>0){
-		include 'php/includes/procesa_categoria.php';		
+		if ($comando=="producto")
+		include 'php/includes/procesa_producto.php';
+		else
+		include 'php/includes/procesa_categoria.php';
 	}
 ?>

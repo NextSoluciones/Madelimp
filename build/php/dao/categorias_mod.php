@@ -58,5 +58,17 @@ ORDER BY puntuacion DESC LIMIT 50');
         $result -> closeCursor();
         return $resultado;
     }
+    public function get_producto($id)
+    {
+      $params = array(':id' => $id);
+      $result=$this->_db->prepare('
+      SELECT nombre,descripcion,img,detalle FROM producto
+      WHERE (id = :id)
+      ');
+      $result -> execute($params);
+      $resultado=$result -> fetchAll(PDO::FETCH_ASSOC);
+      $result -> closeCursor();
+      return $resultado;
+    }
 }
   ?>

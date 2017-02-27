@@ -4,6 +4,7 @@
 <title>Productos de limpieza</title>
 <meta name="description" content="Productos de limpieza para el hogar, venta a distribuidores en Villa el Salvador - Lima - Peru. Somos Mayoristas" />
 <META name="keywords" content="productos de limpieza, Inversiones, Madelimp, SAC, Articulos, Limpieza, Productos, Lima, Perú, hogar, empresa" />
+
 <?php
 	}
 
@@ -12,6 +13,15 @@
 <title>Resultados</title>
 <meta name="description" content="Encuentre los productos de limpieza que está buscando o póngase en contacto con nosotros" />
 <META name="keywords" content="productos de limpieza, busqueda, Inversiones, Madelimp, SAC, Articulos, Limpieza, Productos, Lima, Perú, hogar, empresa" />
+<?php
+	}
+
+	if ($com=="producto"){
+		$producto=$_GET["producto"];
+		?>
+<title>Producto</title>
+<meta name="description" content="<?=$producto ?>" />
+<META name="keywords" content="<?=$producto ?>, productos de limpieza, busqueda, Inversiones, Madelimp, SAC, Articulos, Limpieza, Productos, Lima, Perú, hogar, empresa" />
 <?php
 	}
 
