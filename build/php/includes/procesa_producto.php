@@ -37,6 +37,8 @@
       <div class="detalle-producto">
         <p><?=$detalleUtf ?>
         </p>
+				<a href="javascript:history.go(-1)" class="atras"><div class="triangulo triangulo-left"><div></div></div>
+					<span class="spnAtras">Atrás</span></a>
       </div>
     </div>
   </div>
